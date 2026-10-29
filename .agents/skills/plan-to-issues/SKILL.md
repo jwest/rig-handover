@@ -16,6 +16,11 @@ in a shell this agent can run.
 3. **Stop and show the table to the human.** Publish nothing until they approve it.
 4. Ask the human what every issue here must carry (fields, labels, wording), unless it is
    already written down in this session or in the repo.
+   In this repo it is written down (approved by the repo owner, 2026-10-29). Every issue carries:
+   - first line: `Source: plan.md § <n>`
+   - label: `plan:<plan name from the frontmatter>` (e.g. `plan:morning-digest`)
+   - sections: `## Scope`, `## Done when`, `## Blocked by` (real issue numbers, or `—`)
+   A preview/review issue closes on the reviewer's review, not when the link is sent.
 5. Create each issue in dependency order, so blocked-by can cite real numbers:
 
    ```sh
